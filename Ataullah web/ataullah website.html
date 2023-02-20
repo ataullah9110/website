@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Show</title>
+    <style>
+        body {
+            font-family: 'Lobster', cursive
+        }
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        header {
+            background-color: rgb(1, 1, 8);
+        }
+        .slide{
+            height: 300px;
+            width: 100%;
+            background-image: url("https://rukminim1.flixcart.com/fk-p-flap/844/140/image/34a0309dd901db8e.jpg?q=50");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            animation-name: example;
+            animation-duration: 10s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+        @keyframes example {
+            0%{ background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/bhediya-et00312739-1669100599.jpg);}
+            25%{ background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/drishyam-2-et00331997-1667547668.jpg);}
+            50%{ background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/deadpool-3-et00341295-1664362110.jpg);}
+            75%{ background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/avatar-the-way-of-water-et00037264-1668426757.jpg);}
+            100%{ background-image: url(https://assets-in.bmscdn.com/iedb/movies/images/mobile/listing/xxlarge/black-panther-wakanda-forever-et00310792-1666006244.jpg);}
+        
+        }
+
+        .book {
+            padding: 0;
+            margin: 0;
+            width: 15px;
+            height: 10px;
+        }
+
+        nav,
+        ul,
+        li,
+        a {
+            text-decoration: none;
+            color: white;
+            padding: 10px;
+            display: inline;
+        }
+
+        nav,
+        ul {
+            display: flex;
+            width: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            height: 30px;
+        }
+
+        img {
+            height: 30px;
+        }
+
+        .fighter {
+            width: 100%;
+            height: 5px;
+        }
+
+        #don {
+            padding: 27px;
+        }
+
+        table {
+            font-size: larger;
+            padding: 10px
+        }
+
+        h1 {
+            padding: 10px;
+        }
+        footer{
+            background-color: rgb(51, 51, 64);
+            display: flex;
+            color: white;
+        }
+        #hathodi{
+            padding: 20px;
+            margin-left: 100px;
+        }
+        #ninja{
+            padding: 27px;
+        }
+        #ninja-hathodi{
+            padding: 20px;
+            margin-left: 100px;
+        }
+        button{
+            padding: 10px;
+            background-color: rgb(238, 11, 57);
+            border: 1px solid #000;
+            border-radius: 10px;
+            color: white;
+        }
+        img{
+        border-radius: 20px;
+       }
+       .zoom:hover {
+  -ms-transform: scale(1.075); 
+  -webkit-transform: scale(1.075); 
+  transform: scale(1.075); 
+       }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="first">
+                <ul>
+                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8b466e9f-26b4-4f40-a5ff-7eaa4b314014/dfady0s-54ea7126-3a05-4619-b38f-fb23a2bcb887.jpg/v1/fill/w_1523,h_525,q_70,strp/bookmyshow_logo_by_aisackparrafans_dfady0s-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NjI0IiwicGF0aCI6IlwvZlwvOGI0NjZlOWYtMjZiNC00ZjQwLWE1ZmYtN2VhYTRiMzE0MDE0XC9kZmFkeTBzLTU0ZWE3MTI2LTNhMDUtNDYxOS1iMzhmLWZiMjNhMmJjYjg4Ny5qcGciLCJ3aWR0aCI6Ijw9MTgxMSJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.GR9fAvFJOdiV3hj_kPQHBhX7UKNciW5JmpKnPE1JpmY"
+                        alt="error404">
+                    <li><a href="HOME">HOME</a></li>
+                    <li><a href="ABOUT">ABOUT</a></li>
+                    <li><a href="CONTACT US">CONTACT US</a></li>
+                    <li><input type="text" placeholder="Search Movies,Events,Sports And More"
+                            style="width: 750px; height:30px;"></li>
+                    <li><a href="LOGIN">LOGIN</a></li>
+                    <li><a href="More">MORE</a></li>
+                    <a href=""> <img id="don"
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyPY0F1Zi4Ujxnlqz4Fq-MqN-yjJR_tFLs8g&usqp=CAU"
+                            alt="error404"></a>
+
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <table class="fighter" style="background-color: rgb(103, 96, 96); color:white; font-size: small; ">
+            <tc>
+                <th><a href="https://in.bookmyshow.com/explore/movies-dehradun">Movies</a></th>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/explore/c/stream">Stream</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/explore/events-dehradun">Events</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/explore/plays-dehradun">Plays</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/explore/sports-dehradun">Sports</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/explore/activities-dehradun">Activities</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/buzz">Buzz</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/list-your-show/">List Your Shows</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/voucher">Corporates</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/offers">Offers</th></a>
+            </tc>
+            <tc>
+                <th><a href="https://in.bookmyshow.com/giftcards">Gift Cards</th></a>
+            </tc>
+        </table>
+        <br>
+        <div class="slide"></div>
+        <h1>RECOMMENDED MOVIES</h1>
+        <table>
+            <tr>
+                <th><a href="https://in.bookmyshow.com/dehradun/movies/avengers-endgame/ET00090482"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/avengers-end-game-et00090482-07-12-2018-06-50-21.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a href="https://in.bookmyshow.com/movies/spider-man-no-way-home/ET00310790"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/iedb/movies/images/extra/vertical_logo/mobile/thumbnail/xxlarge/spider-man-no-way-home-et00310790-1662017800.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a href="https://in.bookmyshow.com/dehradun/movies/captain-marvel/ET00056555"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/captain-marvel-et00056555-27-04-2017-10-23-21.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a href="https://in.bookmyshow.com/dehradun/movies/black-widow/ET00118161"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/black-widow-et00118161-18-09-2020-04-09-59.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a href="https://in.bookmyshow.com/dehradun/movies/guardians-of-the-galaxy-/ET00020473"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/guardians-of-the-galaxy-et00020473-04-05-2021-02-16-16.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+
+            </tr>
+            <tr>
+                <td>
+                    <pre>      <strong> The Avenger Endgame</strong></pre>
+                </td>
+                <td>
+                    <pre><strong>     Spider Man (No Way Home) </strong></pre>
+                </td>
+                <td>
+                    <pre><strong>           Captain Marvel</strong></pre>
+                </td>
+                <td>
+                    <pre><strong>            Black Widow </strong></pre>
+                </td>
+                <td>
+                    <pre><strong>       Guardians Of The Galaxy</strong></pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>          Action/Sci-fi  </pre>
+                </td>
+                <td>
+                    <pre>        Action/Adventure</pre>
+                </td>
+                <td>
+                    <pre>          Action/Adventure</pre>
+                </td>
+                <td>
+                    <pre>          Action/Adventure</pre>
+                </td>
+                <td>
+                    <pre>          Action/Adventure</pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>          Rating=8.9/10</pre>
+                </td>
+                <td>
+                    <pre>          Rating=8.3/10</pre>
+                </td>
+                <td>
+                    <pre>           Rating=7.4/10</pre>
+                </td>
+                <td>
+                    <pre>            Rating=8/10</pre>
+                </td>
+                <td>
+                    <pre>             Rating=8.1/10</pre>
+                </td>
+            </tr>
+        </table>
+        <h1>Events Happening Near Your</h1>
+        <table>
+            <tr>
+                <th><a href="https://in.bookmyshow.com/events/oriole-entertainment-live/ET00316295"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-RnJpLCA5IERlYw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00316295-bfsltwyawv-portrait.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a href="https://in.bookmyshow.com/events/the-crowdwork-show-by-abhishek-walia/ET00341228"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxMSBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00341228-flzjmmggxp-portrait.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a href="https://in.bookmyshow.com/events/clarity-stand-up-comedy-solo-by-anshu-mor/ET00344804"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAxOCBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00344804-kywlpyqsuc-portrait.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a href="https://in.bookmyshow.com/events/vijay-yadav-live/ET00314160"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAzIERlYw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00314160-bdrhynqhtu-portrait.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+                <th><a
+                        href="https://in.bookmyshow.com/events/i-am-the-show-stand-up-comedy-by-gurpreet-singh/ET00341866"><img class="zoom"
+                            src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAxMCBEZWM%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00341866-mlsagyhdxd-portrait.jpg"
+                            alt="error404" style="width: 280px; height: 300px;"></a></th>
+
+            </tr>
+            <tr>
+                <td>
+                    <pre><strong>    Oriole Entertainment Live</strong></pre>
+                </td>
+                <td>
+                    <pre><strong>  The CrowdWork Show by Abhishek</strong></pre>
+                </td>
+                <td>
+                    <pre><strong>  CLARITY-Stand Up Comedy by Ashu </strong></pre>
+                </td>
+                <td>
+                    <pre><strong>         Not Just Haryanvi</strong></pre>
+                </td>
+                <td>
+                <pre><strong>  I Am The Show by Gurpreet Singh</strong></pre>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <pre>       Le Amritam:Dehradun</pre>
+                </td>
+                <td>
+                    <pre>      Le Amritam:Dehradun    </pre>
+                </td>
+                <td>
+                    <pre>        Le Amritam:Dehradun</pre>
+                </td>
+                <td>
+                    <pre>        Le Amritam:Dehradun</pre>
+                </td>
+                <td>
+                    <pre>      Impulse Studio:Dehradun</pre>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <h1>Explore Fun Activities</h1>
+            <table>
+                <tr>
+                    <th><a href="https://in.bookmyshow.com/activities/bruce-project-1-online-escape-room-witty-escapes/ET00310869"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMCBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00310869-gxprcdtxtq-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="https://in.bookmyshow.com/activities/imagicaa-theme-park/ET00014607"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMCBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00014607-gpslgxkwvj-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="https://in.bookmyshow.com/events/clarity-stand-up-comedy-solo-by-anshu-mor/ET00344804"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMCBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00321550-juxyzyevzm-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="https://in.bookmyshow.com/activities/imagicaa/ET00136913"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMCBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:oi-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,ox-15,oy-15,ow-50:q-80/et00136913-wqgvvafuvw-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="https://in.bookmyshow.com/activities/sherlock-the-grand-debut-witty-escapes-online/ET00310871"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCAyMCBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00310871-qpefegqaua-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+    
+                </tr>
+                <tr>
+                    <td>
+                        <pre><strong>BRUCE Project 1-Escape Room-Witty</strong></pre>
+                    </td>
+                    <td>
+                        <pre><strong>        Imagicaa Theme Park</strong></pre>
+                    </td>
+                    <td>
+                        <pre><strong>          Hamleys Playzone </strong></pre>
+                    </td>
+                    <td>
+                        <pre><strong>              Imegicaa</strong></pre>
+                    </td>
+                    <td>
+                    <pre><strong>   Sherlock The Grand Debut-Witty</strong></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>       Online(Play From Home)</pre>
+                    </td>
+                    <td>
+                        <pre>             Mumbai</pre>
+                    </td>
+                    <td>
+                        <pre>          Multiple venues</pre>
+                    </td>
+                    <td>
+                        <pre>           Multiple venues</pre>
+                    </td>
+                    <td>
+                        <pre>        Online(Play From Home)</pre>
+                    </td>
+                </tr>
+        </table>
+        <h1>Top Games And Sports Events</h1>
+            <table>
+                <tr>
+                    <th><a href="https://in.bookmyshow.com/sports/whos-the-killer-an-online-murder-mystery/ET00311111"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCAyMSBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00311111-xqphzgmjvw-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="https://in.bookmyshow.com/sports/republic-day-ludo-tournament-by-malsar/ET00340999"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-VGh1LCAyNiBKYW4%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340999-zuxmjhbkde-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="https://in.bookmyshow.com/sports/practice-for-sudoku-championship-winter-2022/ET00337798"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U2F0LCAyNiBOb3Y%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00337798-wkapfrxemp-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="https://in.bookmyshow.com/sports/delhi-sudoku-championship-summer-2023/ET00340443"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-U3VuLCA5IEFwcg%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00340443-dnhsfhxwea-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+                    <th><a href="hhttps://in.bookmyshow.com/sports/pirate-plunder-the-treasure-hunt/ET00311560"><img class="zoom"
+                                src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:ote-TW9uLCAyMSBOb3Ygb253YXJkcw%3D%3D,ots-29,otc-FFFFFF,oy-612,ox-24:q-80/et00311560-wygldwmzzj-portrait.jpg"
+                                alt="error404" style="width: 280px; height: 300px;"></a></th>
+    
+                </tr>
+                <tr>
+                    <td>
+                        <pre><strong> Whos-the-Killer-A-Murder-Mystery</strong></pre>
+                    </td>
+                    <td>
+                        <pre><strong>    Ludo-tournament-by-Malsar</strong></pre>
+                    </td>
+                    <td>
+                        <pre><strong>  Practice-for-Sudoku-Championship</strong></pre>
+                    </td>
+                    <td>
+                        <pre><strong>  Delhi-Sudoku-Championship-Summers</strong></pre>
+                    </td>
+                    <td>
+                    <pre><strong>  Pirate-Plunder-The-Treasure-Hunt</strong></pre>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <pre>      Online Streaming</pre>
+                    </td>
+                    <td>
+                        <pre>          Watch On Zoom</pre>
+                    </td>
+                    <td>
+                        <pre>         Watch On Zoom</pre>
+                    </td>
+                    <td>
+                        <pre>           Watch On Zoom</pre>
+                    </td>
+                    <td>
+                        <pre>          Online Streaming</pre>
+                    </td>
+                </tr>
+        </table>
+    </main>
+    <footer>
+        <div id="hathodi"><img  src="https://in.bmscdn.com/webin/common/icons/hut.svg" alt="error404"></div>
+        <div id="ninja"><strong>List list-your-show </strong>Got a show,events,activities or a great Experience?Partner with us and get listend on BOOK MY SHOW.</div>
+<div id="ninja-hathodi"><button>CONTACT TODAY!</button></div>
+    </footer>
+
+</body>
+
+</html>
